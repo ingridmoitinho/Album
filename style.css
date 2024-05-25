@@ -1,0 +1,116 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  color: rgba(213, 201, 228, 0.781);
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  color: rgba(223, 132, 175, 0.37);
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.container {
+  display: grid;
+  width: 69em;
+  grid-template-columns: 40% 60% 20%;
+  grid-auto-rows: 80px;
+  gap: 3px;
+  grid-template-areas:
+    "b1 b1 b2"
+    "b1 b1 b2"
+    "b3 b5 b2"
+    "b3 b5 b2"
+    "b4 b5 b2"
+    "b4 b5 b2"
+    "b4 b5 b6"
+    "b9 b7 b6"
+    "b9 b7 b6"
+    "b9 b8 b8"
+    "b9 b8 b8"
+    "b10 b10 b10"
+    "b10 b10 b10";
+}
+
+#box-1 {
+  grid-area: b1;
+  background-image: url("https://cdn.pixabay.com/photo/2020/08/23/03/41/leaves-5509797_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#box-2 {
+  grid-area: b2;
+  background-image: url("https://cdn.pixabay.com/photo/2019/06/15/13/08/fog-4275560_1280.jpg");
+  background-size: cover;
+}
+
+#box-3 {
+  grid-area: b3;
+  background-image: url("https://media.istockphoto.com/id/1317323736/pt/foto/a-view-up-into-the-trees-direction-sky.jpg?s=1024x1024&w=is&k=20&c=i-WHrx_vm0Aobq_U42BUJ37LjFyt0IgRKquxlo-joZs=");
+  background-size: cover;
+}
+
+#box-4 {
+  grid-area: b4;
+  background-image: url("https://cdn.pixabay.com/photo/2014/04/07/16/51/leaves-318743_960_720.jpg");
+  background-size: cover;
+}
+
+#box-5 {
+  grid-area: b5;
+  background-image: url("https://cdn.pixabay.com/photo/2017/12/15/19/57/water-3021652_1280.jpg");
+  background-size: cover;
+}
+
+#box-6 {
+  grid-area: b6;
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/12/16/22/oilseed-rape-2224941_1280.jpg");
+  background-size: cover;
+}
+
+#box-7 {
+  grid-area: b7;
+  background-image: url("https://cdn.pixabay.com/photo/2015/06/25/14/13/fern-821293_1280.jpg");
+  background-size: cover;
+}
+
+#box-8 {
+  grid-area: b8;
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/25/22/31/tree-2261027_1280.jpg");
+  background-size: cover;
+}
+
+#box-9 {
+  grid-area: b9;
+  background-image: url("https://cdn.pixabay.com/photo/2023/04/24/03/22/butterfly-7947062_1280.jpg");
+  background-size: cover;
+}
+
+#box-10 {
+  grid-area: b10;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5b51083c3e2d091347d2e6fe/1638462278514-4YWH839J25OURZLJUI5C/mike-benna-SBiVq9eWEtQ-unsplash.jpg?format=1500w");
+  background-size: cover;
+}
+
+p {
+  color: rgba(164, 138, 196, 0.719);
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+}
+
+/* Mobile */
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 30% 50% 20%;
+  }
+}
